@@ -1,0 +1,18 @@
+﻿#debug ignore
+debug/*.o
+debug/moc_*
+debug/Snake.exe
+
+# release ignore
+release/*.o
+release/moc_*
+release/Snake.exe
+
+*.o
+Snake.pro.*
+Makefile
+ui_*
+moc*
+Makefile.Release
+Makefile.Debug
+
