@@ -1,10 +1,11 @@
-#include <QtCore/QCoreApplication>
+#include <QCoreApplication>
 #include <QDebug>
 #include "point.h"
 #include "horizontalline.h"
 #include "verticalline.h"
 #include "figure.h"
 #include "snake.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,11 +23,11 @@ int main(int argc, char *argv[])
 //    p2.draw();
 
     Point p3(30, 30, '*');
-//    p3.draw();
 
     Snake snake(p3, 10, UP);
-//    snake.draw();
-    snake.move(RIGHT);
+    snake.draw();
+
+    snake.startMove(RIGHT);
 
     return a.exec();
 }

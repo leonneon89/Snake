@@ -1,6 +1,11 @@
 #include "figure.h"
 
-Figure::Figure()
+Figure::Figure(QObject *parent):
+    QObject(parent)
+{
+}
+
+Figure::~Figure()
 {
 }
 

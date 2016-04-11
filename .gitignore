@@ -15,4 +15,5 @@ ui_*
 moc*
 Makefile.Release
 Makefile.Debug
-
+object_script.Snake.Debug
+object_script.Snake.Release

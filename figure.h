@@ -3,11 +3,14 @@
 
 #include "point.h"
 #include <QList>
+#include <QObject>
 
-class Figure
+class Figure : public QObject
 {
+    Q_OBJECT
 public:
-    Figure();
+    explicit Figure(QObject *parent = 0);
+    virtual ~Figure();
     void draw();
 
 protected:
