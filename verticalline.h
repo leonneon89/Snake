@@ -7,6 +7,7 @@
 
 class VerticalLine : public Figure
 {
+    Q_OBJECT
 public:
     VerticalLine(int x, int y, int length);
 };

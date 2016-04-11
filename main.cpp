@@ -5,7 +5,6 @@
 #include "verticalline.h"
 #include "figure.h"
 #include "snake.h"
-#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {

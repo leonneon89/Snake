@@ -30,23 +30,13 @@ HEADERS += \
 
 FORMS +=
 
-INCLUDEPATH += c:/boost_1_55_0/
-BoostPath = c:/boost_1_55_0/stage/lib
+INCLUDEPATH += $$PWD
+BoostPath = $$PWD/lib
 BoostVersionDebug = -mgw44-mt-d-1_55
 BoostVersion = -mgw44-mt-1_55
 
 CONFIG(debug) {
-    LIBS += -L$${BoostPath} -lboost_system$${BoostVersionDebug} \
-                            -lboost_chrono$${BoostVersionDebug} \
-                            -lboost_thread$${BoostVersionDebug} \
-                            -lboost_timer$${BoostVersionDebug} \
-                            -lboost_date_time$${BoostVersionDebug} \
-                            -lboost_program_options$${BoostVersionDebug}
+    LIBS += -L$${BoostPath} -lboost_thread$${BoostVersionDebug}
 }else {
-    LIBS += -L$${BoostPath} -lboost_system$${BoostVersion} \
-                            -lboost_chrono$${BoostVersion} \
-                            -lboost_thread$${BoostVersion} \
-                            -lboost_timer$${BoostVersion} \
-                            -lboost_date_time$${BoostVersion} \
-                            -lboost_program_options$${BoostVersion}
+    LIBS += -L$${BoostPath} -lboost_thread$${BoostVersion}
 }
